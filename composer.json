@@ -1,0 +1,31 @@
+{
+    "name": "hyvor/php-svg-icons",
+    "description": "PHP SVG Icons Library",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Supun",
+            "email": "supun@hyvor.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Hyvor\\SvgIcons\\": "src",
+            "Hyvor\\SvgIcons\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "ext-simplexml": "*"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.6",
+        "pestphp/pest": "^1.21"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
