@@ -11,21 +11,21 @@ return [
 
     'bootstrap' => [
         'fetcher' => Bootstrap::class,
-        'url' => 'https://github.com/twbs/icons',
+        'url' => 'https://icons.getbootstrap.com/',
         'license' => 'MIT',
         'licenseUrl' => 'https://github.com/twbs/icons/blob/main/LICENSE.md'
     ],
 
     'fontawesome' => [
         'fetcher' => FontAwesome::class,
-        'url' => 'https://github.com/FortAwesome/Font-Awesome',
+        'url' => 'https://fontawesome.com/icons',
         'license' => 'Font Awesome Free License',
         'licenceUrl' => 'https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt',
     ],
 
     'ionicons' => [
         'fetcher' => Ionicons::class,
-        'url' => 'https://github.com/ionic-team/ionicons',
+        'url' => 'https://ionic.io/ionicons',
         'license' => 'MIT',
         'licenseUrl' => 'https://github.com/ionic-team/ionicons/blob/main/LICENSE'
     ],

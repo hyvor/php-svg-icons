@@ -1,8 +1,8 @@
 <?php
 namespace Hyvor\SvgIcons;
 
-use IconNotFoundException;
-use InvalidLibraryException;
+use Hyvor\SvgIcons\Exception\IconNotFoundException;
+use Hyvor\SvgIcons\Exception\InvalidLibraryException;
 use SimpleXMLElement;
 
 class Icon
@@ -47,6 +47,8 @@ class Icon
 
         self::updateAttr($svg, 'width', $width);
         self::updateAttr($svg, 'height', $height);
+        self::updateAttr($svg, 'fill', 'currentColor');
+        self::updateAttr($svg, 'style', 'vertical-align:middle');
 
         return $svg->asXML();
 
