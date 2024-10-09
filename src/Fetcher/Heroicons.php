@@ -12,12 +12,12 @@ class Heroicons implements Fetcher
     {
         $directory = $this->fromNpm('heroicons');
 
-        $regular = glob("$directory/solid/*.svg");
+        $regular = glob("$directory/24/solid/*.svg");
         foreach ($regular as $file) {
             IconWriter::write('heroicons', $file, fn ($name) => $name . '-solid');
         }
 
-        $solid = glob("$directory/outline/*.svg");
+        $solid = glob("$directory/24/outline/*.svg");
         foreach ($solid as $file) {
             IconWriter::write('heroicons', $file, fn ($name) => $name . '-outline');
         }
